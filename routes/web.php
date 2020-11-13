@@ -11,6 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// ブログ一覧画面を表示
+Route::get('/', 'BlogController@showList')->name
+('blogs');
